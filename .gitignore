@@ -1,0 +1,22 @@
+# --- Builds ---
+bin/
+obj/
+AppPackages/
+BundleArtifacts/
+*.appx
+*.appxupload
+*.appxbundle
+*.user
+*.suo
+.vs/
+Thumbs.db
+desktop.ini
+tests/last-run.txt
+tests/java-reference/out/
+
+# The package signing key is private: build.bat makes one with make-cert.ps1 when missing.
+*.pfx
+
+# --- Python ---
+__pycache__/
+*.pyc

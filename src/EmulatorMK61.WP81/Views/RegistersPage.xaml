@@ -1,0 +1,15 @@
+<Page
+    x:Class="EmulatorMK61.Views.RegistersPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="{StaticResource CommonBackground}">
+    <ScrollViewer>
+        <StackPanel Margin="19,12,19,12">
+            <TextBlock Text="РЕГИСТРЫ" FontSize="15" Foreground="#FFCCCCCC" />
+            <TextBlock x:Name="Status" FontSize="15" Foreground="#FFCCCCCC" TextWrapping="Wrap" Margin="0,8,0,0" />
+            <TextBlock x:Name="Stack" FontFamily="Courier New" FontSize="22" Foreground="{StaticResource IndicatorDigits}" Margin="0,8,0,0" />
+            <Border Height="1" Background="#FF808080" Margin="0,10,0,10" />
+            <TextBlock x:Name="Memory" FontFamily="Courier New" FontSize="22" Foreground="{StaticResource IndicatorDigits}" />
+        </StackPanel>
+    </ScrollViewer>
+</Page>

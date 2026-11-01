@@ -1,0 +1,25 @@
+# Key scripts run by both the original Java engine (tests\java-reference) and the C# port
+# (tests\EmulatorMK61.Tests); their indicator after each key must be identical.
+#
+# A line: <model 61|54> <angle R|G|D> then keys. wN = run N more steps (560 x 42 ticks each).
+# Every key is followed by 2 steps. Keys:
+#   0-9 . CHS(/-/) EE(ВП) CX UP(В↑) XY(↔) + - * /  F K  RCL(П→X) STO(X→П)
+#   GTO(БП) GSB(ПП) SST(ШГ→) BST(ШГ←) RTN(В/О) RS(С/П)
+61 R w3 2 UP 3 +
+61 R w3 1 0 0 F /
+61 D w3 3 0 F 7
+61 R w3 2 F -
+61 R w3 1 EE 9 9 UP *
+61 G w3 1 0 0 F 7
+61 R w3 7 . 5 K 7
+61 R w3 7 . 5 CHS K 8
+61 R w3 5 STO 3 4 RCL 3 +
+61 R w3 1 F 6 F 4
+61 R w3 2 UP 1 0 F XY
+61 R w3 F CX 4 F 1
+61 R w3 F EE UP * RS F CHS RTN 5 RS w20
+61 R w3 F EE 1 + RS GTO 0 0 F CHS RTN 0 RS w30 RS w3
+61 R w3 F EE STO 1 RCL 1 RTN RTN F CHS 7 RTN RS w10 SST SST BST
+54 R w3 2 UP 3 *
+54 D w3 4 5 F 9
+54 R w3 F EE UP * RS F CHS RTN 9 RS w20
